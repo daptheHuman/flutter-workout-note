@@ -20,7 +20,7 @@ try {
 	console.log('Database not connected');
 }
 
-app.listen(proccess.env.PORT | PORT, () => {
+app.listen(process.env.PORT | PORT, () => {
 	return console.log(`Server run on http://localhost:${PORT}`);
 });
 
