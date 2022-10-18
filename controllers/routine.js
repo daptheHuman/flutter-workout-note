@@ -6,6 +6,8 @@ const createRoutine = async (req, res) => {
     const user = await User.findById(req.user._id);
     const routine = new Routine(req.body);
 
+    console.log("req.body", req.body);
+
     routine.save();
     user.routine.push(routine);
     user.save();
